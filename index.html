@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persamaan Kuadrat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen" style="background-color: #f0efef;">
+    <div class="flex-grow mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-lg">
+            <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Kalkulator Persamaan Kuadrat</h1>
+
+            <p class="mx-auto mt-4 max-w-md text-center text-gray-500">
+                ax^2 + bx + c = 0
+            </p>
+
+            <form action="#" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
+                <p class="text-center text-lg font-medium">Masukan koefisien</p>
+
+                <div>
+                    <label for="a" class="sr-only">Koefisien a</label>
+                    <div class="relative">
+                        <input
+                            type="number"
+                            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                            placeholder="Masukan koefisien a"
+                            id="a"
+                        />
+                    </div>
+                </div>
+
+                <div>
+                    <label for="b" class="sr-only">Koefisien b</label>
+                    <div class="relative">
+                        <input
+                            type="number"
+                            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                            placeholder="Masukan koefisien b"
+                            id="b"
+                        />
+                    </div>
+                </div>
+
+                <div>
+                    <label for="c" class="sr-only">Koefisien c</label>
+                    <div class="relative">
+                        <input
+                            type="number"
+                            class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                            placeholder="Masukan koefisien c"
+                            id="c"
+                        />
+                    </div>
+                </div>
+
+                <button
+                    type="button"
+                    class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
+                    id="hitung"
+                >
+                    Hitung
+                </button>
+
+                <div id="hasil" class="text-center mt-4 text-lg font-medium"></div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-indigo-600 py-4">
+        <p class="text-white text-center text-sm">© 2024 all right reversed</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
